@@ -1,0 +1,118 @@
+$white: #fff;
+$black: #000000;
+// $darken: #3a4348;
+
+$primary: #b7472a;
+$secondary: #01d28e;
+
+
+.hero-wrap{
+  background-image: url("../../assets/bg_2.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 0;
+  height: 750px;
+  background-attachment: fixed;
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .4;
+    background: $black;
+  }
+
+  .slider-text{
+    height: 750px;
+    position: relative;
+    .text{
+      padding: 30px 0;
+      // border-top: 1px solid rgba(255,255,255,.2);
+      // border-bottom: 1px solid rgba(255,255,255,.2);
+      transform: rotate(-4deg);
+    }
+    h1 {
+      //font-size: 80px;
+      font-size: 60px;
+      //color: white;
+      line-height: 1.1;
+      font-weight: 700;
+      // text-transform: uppercase;
+      font-style: italic;
+      color: #fcc934;;
+      -webkit-text-fill-color: #fcc934;; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: .5px;
+      -webkit-text-stroke-color: $white;
+      span{
+        color: $primary;
+        -webkit-text-fill-color: $white;
+        -webkit-text-stroke-width: 0px;
+      }
+
+    }
+    p {
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(255,255,255,.9);
+      font-size: min(20px, 4vw);
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &.hero-wrap-2{
+    height: 400px !important;
+    position: relative;
+    .overlay{
+      width: 100%;
+      height: 400px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      opacity: .3;
+    }
+    .slider-text{
+      //height: 400px !important;:
+
+      .breadcrumbs{
+        font-size: 14px;
+        margin-bottom: 20px;
+        z-index: 99;
+        text-transform: uppercase;
+        font-weight: 500;
+        span{
+          color: rgba(255,255,255,.7);
+          i{
+            color: rgba(255,255,255,.5);
+            font-size: 13px;
+          }
+          a{
+            color: rgba(255,255,255,.7);
+            &:hover, &:focus{
+              color: $primary;
+              i{
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+      .bread{
+        position: relative;
+        color: $white !important;
+        font-size: 60px;
+        line-height: 1.1;
+        font-weight: 400;
+      }
+    }
+  }
+}

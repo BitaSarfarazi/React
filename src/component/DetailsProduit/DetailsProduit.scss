@@ -1,0 +1,113 @@
+
+.details{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .title{
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sub-title{
+        font-size: 13px;
+        color: black;
+        .value{
+            color: #767676;
+            font-size: 12px;
+        }
+    }
+    .description{
+        font-size: 13px;
+        line-height: 37px;
+        .label{
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .value{
+            color: #00000091;
+            font-weight: 300;
+        }
+    }
+    .green{
+        font-weight: 600 !important;
+        color: green !important;
+    }
+    .bold-value{
+        font-weight: 800 !important;
+    }
+}
+
+.comments{
+    margin-bottom: 40px;
+
+    .comment{
+        display: flex;
+        background: white;
+        border: 1px solid lightgray;
+        padding: 18px 24px;
+        border-radius: 17px;
+        margin-bottom: 10px;
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+        b{
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .comment-body{
+            min-width: 25%;
+            margin-left: 15px;
+            background: white;
+            width: 100%;
+            /*border: 1px solid lightgray;*/
+            /*border-radius: 10px;*/
+            /*padding: 7px 20px;*/
+        }
+        .comment-header{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .comment-text{
+            font-size: 14px;
+            opacity: .9;
+        }
+        .input{
+            min-height: 40px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .light-text{
+            //font-weight: 300;
+            //opacity: .7;
+            font-size: 12px;
+        }
+        .btn{
+            font-size: 12px;
+        }
+        .new-comment{
+            display: flex;
+        }
+    }
+
+
+    .note-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .orange{
+        color: #f29f06;
+    }
+
+
+
+}
